@@ -30,7 +30,7 @@ public abstract class AbstractMobileMojo extends AbstractMojo {
     private String javafxportsVersion;
 
     @Parameter( defaultValue = "${jfxmobile.mainClass}" )
-    private String mainClass;
+    protected String mainClass;
 
     @Parameter( defaultValue = "${jfxmobile.preloaderClass}" )
     private String preloaderClass;

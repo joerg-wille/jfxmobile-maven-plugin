@@ -68,6 +68,7 @@ public class DeviceMojo extends AbstractMojo {
         getLog().info( "ios device force link classes " + config.getForceLinkClasses() );
         getLog().info( "ios device info.plist " + iosConf.getInfoPList() );
         getLog().info( "ios device libs " + config.getLibs() );
+        getLog().info( "ios device mainClass " + config.getMainClass() );
 
         AppCompiler compiler = new AppCompiler( config );
 

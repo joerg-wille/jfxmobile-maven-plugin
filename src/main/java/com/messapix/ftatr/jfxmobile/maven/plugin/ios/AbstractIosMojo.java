@@ -42,6 +42,7 @@ public abstract class AbstractIosMojo extends AbstractMobileMojo {
             ios = new IosData();
         }
 
+        ic.setLauncherClassName(mainClass);
         ic.configure( ios, target() );
     }
     

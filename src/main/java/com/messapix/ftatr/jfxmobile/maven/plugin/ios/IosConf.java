@@ -144,8 +144,12 @@ public class IosConf {
                 robovmBuilder.forDevice( arch );
                 break;
         }
-
+        
         configureDependencies( iosData.getDependencies() );
+    }
+    
+    public void setLauncherClassName(String launcherClassName) {
+        this.launcherClassName = launcherClassName;
     }
 
     public Path getSdkLibDir() {
